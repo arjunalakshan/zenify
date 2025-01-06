@@ -118,4 +118,20 @@ class MindfulnessProvider extends ChangeNotifier {
     ];
     mindfulnessExList = List.from(_allMindfulnessExList);
   }
+  //* Getter for all mindfull exercises
+  List<MindfulnessExerciseModel> get allMindfulnessExerciseList =>
+      mindfulnessExList;
+
+  //* Search the mindfulness exercise
+  void onSearchExercise(String searchQuery) {
+    if (searchQuery.isEmpty) {
+      mindfulnessExList = List.from(_allMindfulnessExList);
+    } else {
+      mindfulnessExList = _allMindfulnessExList
+          .where((element) =>
+              element.name.toLowerCase().contains(searchQuery.toLowerCase()))
+          .toList();
+    }
+    notifyListeners();
+  }
 }

@@ -62,5 +62,6 @@ class SleepExProvider extends ChangeNotifier {
             "https://onlinetestcase.com/wp-content/uploads/2023/06/500-KB-MP3.mp3",
       ),
     ];
+    sleepExList = List.from(_allSleepExList);
   }
 }

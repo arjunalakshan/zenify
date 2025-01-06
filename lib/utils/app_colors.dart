@@ -6,7 +6,7 @@ class AppColors {
   static const Color kSecondaryColor = Color(0xffBE95C4);
   static const Color kSupportColor = Color(0xffE0B1CB);
   static const Color kBlckColor = Color(0xff231942);
-  static const Color kWhiteColor = Color(0xfff2e9e4);
+  static const Color kWhiteColor = Colors.white;
   static const Color kGrayColor = Color(0xffadb5bd);
   static const Color kLightGrayColor = Color(0xfff8f9fa);
 }
